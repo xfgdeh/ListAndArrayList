@@ -3,9 +3,6 @@ package com.ximena;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Created by ximena on 21/01/2019.
- */
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
     private static GroceryList groceryList = new GroceryList();
