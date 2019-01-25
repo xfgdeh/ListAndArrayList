@@ -90,10 +90,7 @@ public class Main {
         ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
         System.out.println(nextArray);
 
-        //Third way of retrieving an ArrayList // doesn't work
-        String[] myArray = new String[groceryList.getGroceryList().size()];
-        myArray = groceryList.getGroceryList().toArray(myArray);
-        System.out.println(myArray);
+
 
     }
 }
