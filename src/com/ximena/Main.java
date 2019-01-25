@@ -81,16 +81,19 @@ public class Main {
         }
     }
     public static void processArrayList(){
-        //First Way of retrieving an arrayList
+        //First Way of retrieving arrayList
         ArrayList<String> newArray = new ArrayList<String>();
         newArray.addAll(groceryList.getGroceryList());
         System.out.println(newArray);
 
-        //Second way of retrieving an ArrayList
+        //Second way of retrieving ArrayList
         ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
         System.out.println(nextArray);
 
-
+        //Third way of retrieving ArrayList // doesn't work
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+        myArray = groceryList.getGroceryList().toArray(myArray);
+        System.out.println(myArray);
 
     }
 }
